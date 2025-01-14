@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx88ldw8xlxvh"]
+
+[ext_resource type="Script" path="res://Menu/Menu_Principal.gd" id="1_bhgqa"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_bhgqa")
+
+[node name="Instrucciones" type="Button" parent="."]
+offset_left = 202.0
+offset_top = 30.0
+offset_right = 314.0
+offset_bottom = 61.0
+text = "Instrucciones"
+
+[node name="Créditos" type="Button" parent="."]
+offset_right = 25.0
+offset_bottom = 8.0
+text = "créditos"
+
+[node name="Juego" type="Button" parent="."]
+offset_left = 187.0
+offset_top = 155.0
+offset_right = 238.0
+offset_bottom = 186.0
+text = "juego"
+
+[connection signal="pressed" from="Instrucciones" to="." method="_on_instrucciones_pressed"]
+[connection signal="pressed" from="Créditos" to="." method="_on_créditos_pressed"]
+[connection signal="pressed" from="Juego" to="." method="_on_juego_pressed"]
