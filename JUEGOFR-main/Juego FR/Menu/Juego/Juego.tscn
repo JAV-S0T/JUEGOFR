@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://fiyb6oqu1mj6"]
+
+[ext_resource type="Script" path="res://Menu/Juego/Juego.gd" id="1_s1316"]
+[ext_resource type="Texture2D" uid="uid://cvrgjrcvecvsu" path="res://Imágenes/imagen_Juego.jpg" id="2_tct45"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_s1316")
+
+[node name="Volver3" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Volver"
+
+[node name="ImagenJuego" type="Sprite2D" parent="."]
+position = Vector2(1509, 661)
+scale = Vector2(2.65762, 1.95976)
+texture = ExtResource("2_tct45")
+
+[connection signal="pressed" from="Volver3" to="." method="_on_volver_3_pressed"]
