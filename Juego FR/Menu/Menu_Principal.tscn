@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx88ldw8xlxvh"]
+
+[ext_resource type="Script" path="res://Menu/Menu_Principal.gd" id="1_bhgqa"]
+[ext_resource type="Texture2D" uid="uid://blmr752w8th63" path="res://Imágenes/imagen_menu_principal.webp" id="2_qw7gq"]
+
+[node name="Menu Principal" type="Node2D"]
+script = ExtResource("1_bhgqa")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ImagenMenuPrincipal" type="Sprite2D" parent="Control"]
+position = Vector2(578.5, 324.5)
+scale = Vector2(1.80469, 1.79722)
+texture = ExtResource("2_qw7gq")
+
+[node name="Instrucciones" type="Button" parent="Control/ImagenMenuPrincipal"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -380.5
+offset_top = -195.5
+offset_right = -259.5
+offset_bottom = -164.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Instrucciones"
+
+[node name="Créditos" type="Button" parent="Control/ImagenMenuPrincipal"]
+anchors_preset = -1
+anchor_left = 0.446
+anchor_top = 0.595
+anchor_right = 0.446
+anchor_bottom = 0.595
+offset_left = -320.0
+offset_top = -180.0
+offset_right = -249.0
+offset_bottom = -149.0
+text = "créditos"
+
+[node name="Juego" type="Button" parent="Control/ImagenMenuPrincipal"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.324
+anchor_right = 0.5
+anchor_bottom = 0.324
+offset_left = -345.5
+offset_top = -180.0
+offset_right = -294.5
+offset_bottom = -149.0
+grow_horizontal = 2
+text = "Jugar"
+
+[connection signal="pressed" from="Control/ImagenMenuPrincipal/Instrucciones" to="." method="_on_instrucciones_pressed"]
+[connection signal="pressed" from="Control/ImagenMenuPrincipal/Créditos" to="." method="_on_créditos_pressed"]
+[connection signal="pressed" from="Control/ImagenMenuPrincipal/Juego" to="." method="_on_juego_pressed"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://3555hs8uo181"]
+
+[ext_resource type="AudioStream" uid="uid://ce3rtk7plsgn0" path="res://Sonidos/Sonido_Menú/Peaceful Hub - Trove Soundtrack _ Peaceful hills.mp3" id="1_gyuth"]
+
+[node name="Global" type="Node2D"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_gyuth")
+autoplay = true

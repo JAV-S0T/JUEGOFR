@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3o45fhqumul3"]
+
+[ext_resource type="Script" path="res://Menu/Instrucciones/Instrucciones.gd" id="1_pbx4d"]
+[ext_resource type="Texture2D" uid="uid://cxn26hyade5i4" path="res://Imágenes/Imagen_Instrucciones.png" id="2_chwi3"]
+
+[node name="Instrucciones" type="Node2D"]
+script = ExtResource("1_pbx4d")
+
+[node name="ImagenInstrucciones" type="Sprite2D" parent="."]
+position = Vector2(573.5, 324.499)
+scale = Vector2(1.27667, 1.28797)
+texture = ExtResource("2_chwi3")
+
+[node name="Volver1" type="Button" parent="ImagenInstrucciones"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -450.0
+offset_top = -284.5
+offset_right = -393.0
+offset_bottom = -253.5
+grow_vertical = 0
+text = "Volver"
+
+[node name="Instrucciones1" type="Button" parent="ImagenInstrucciones"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -613.316
+offset_top = -255.053
+offset_right = -300.316
+offset_bottom = -155.053
+grow_horizontal = 2
+text = "Consigue puntos derrotando enemigos,
+cada vez subiendo la dificultad.
+
+Ataca haciendo click izquierdo"
+flat = true
+
+[connection signal="pressed" from="ImagenInstrucciones/Volver1" to="." method="_on_volver_1_pressed"]

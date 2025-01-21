@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ce3rtk7plsgn0"
+path="res://.godot/imported/Peaceful Hub - Trove Soundtrack _ Peaceful hills.mp3-7ff06f9c846275c76dd7887a18ffe750.mp3str"
+
+[deps]
+
+source_file="res://Sonidos/Sonido_Menú/Peaceful Hub - Trove Soundtrack _ Peaceful hills.mp3"
+dest_files=["res://.godot/imported/Peaceful Hub - Trove Soundtrack _ Peaceful hills.mp3-7ff06f9c846275c76dd7887a18ffe750.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
