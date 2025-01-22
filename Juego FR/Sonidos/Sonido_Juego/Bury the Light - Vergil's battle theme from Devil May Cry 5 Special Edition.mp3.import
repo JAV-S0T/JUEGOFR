@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dtvfulla4lxej"
+path="res://.godot/imported/Bury the Light - Vergil's battle theme from Devil May Cry 5 Special Edition.mp3-5359a33a1732c9473ea49bb06da96bdb.mp3str"
+
+[deps]
+
+source_file="res://Sonidos/Sonido_Juego/Bury the Light - Vergil's battle theme from Devil May Cry 5 Special Edition.mp3"
+dest_files=["res://.godot/imported/Bury the Light - Vergil's battle theme from Devil May Cry 5 Special Edition.mp3-5359a33a1732c9473ea49bb06da96bdb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

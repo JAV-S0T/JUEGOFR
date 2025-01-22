@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="Juego"
+run/main_scene="res://Menu/Menu_Principal.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Global="*res://Global.tscn"
+Global="*res://Global/Global.tscn"

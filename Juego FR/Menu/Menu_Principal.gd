@@ -11,10 +11,17 @@ var change_Juego = load("res://Menu/Juego/Juego.tscn")
 
 func _on_juego_pressed():
 	get_tree().change_scene_to_packed(change_Juego)
+	$"/root/Global/AudioStreamPlayer2D".stop()
+	
 	pass # Replace with function body.
 
 var change_Instrucciones = load("res://Menu/Instrucciones/Instrucciones.tscn")
 
 func _on_instrucciones_pressed():
 	get_tree().change_scene_to_packed(change_Instrucciones)
+	pass # Replace with function body.
+
+
+
+func _on_juego_mouse_entered():
 	pass # Replace with function body.
