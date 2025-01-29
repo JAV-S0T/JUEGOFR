@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c2ymh8cpxjbwd"]
 
 [ext_resource type="Script" path="res://Menu/Créditos/Créditos.gd" id="1_dach7"]
-[ext_resource type="Texture2D" uid="uid://dbxocy8htli4k" path="res://Imágenes/Imagen_Créditos.jpg" id="2_j12xr"]
+[ext_resource type="Texture2D" uid="uid://dbxocy8htli4k" path="res://Imágenes/Imagenes_Menu/Imagen_Créditos.jpg" id="2_j12xr"]
 
 [node name="Créditos" type="Node2D"]
 script = ExtResource("1_dach7")

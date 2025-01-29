@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cx88ldw8xlxvh"]
 
 [ext_resource type="Script" path="res://Menu/Menu_Principal.gd" id="1_bhgqa"]
-[ext_resource type="Texture2D" uid="uid://blmr752w8th63" path="res://Imágenes/imagen_menu_principal.webp" id="2_qw7gq"]
+[ext_resource type="Texture2D" uid="uid://blmr752w8th63" path="res://Imágenes/Imagenes_Menu/imagen_menu_principal.webp" id="2_sw6hm"]
 
 [node name="Menu Principal" type="Node2D"]
 script = ExtResource("1_bhgqa")
@@ -15,7 +15,7 @@ offset_bottom = 40.0
 [node name="ImagenMenuPrincipal" type="Sprite2D" parent="Control"]
 position = Vector2(578.5, 324.5)
 scale = Vector2(1.80469, 1.79722)
-texture = ExtResource("2_qw7gq")
+texture = ExtResource("2_sw6hm")
 
 [node name="Instrucciones" type="Button" parent="Control/ImagenMenuPrincipal"]
 anchors_preset = 8
