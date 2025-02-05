@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=79 format=3 uid="uid://biv41qjuurldf"]
 
-[ext_resource type="Texture2D" path="res://addons/duelyst_animated_sprites/assets/spritesheets/units/f6_greatwhitenorth.png" id="1_6vw83"]
+[ext_resource type="Texture2D" uid="uid://bta6ruuq0sm6b" path="res://addons/duelyst_animated_sprites/assets/spritesheets/units/f6_greatwhitenorth.png" id="1_6vw83"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vlcba"]
 atlas = ExtResource("1_6vw83")
@@ -378,7 +378,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack",
-"speed": 9.0
+"speed": 11.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -425,7 +425,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"breathing",
-"speed": 9.0
+"speed": 11.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -542,7 +542,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 9.0
+"speed": 11.0
 }, {
 "frames": [{
 "duration": 1.0,

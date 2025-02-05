@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://d4kyi3xov3jg5"]
+[gd_scene load_steps=2 format=3 uid="uid://d4kyi3xov3jg5"]
 
-[node name="Enemigo1" type="Node2D"]
+[ext_resource type="SpriteFrames" uid="uid://bmrsx2cn1iw2o" path="res://Menu/Juego/Enemigos/Enemigo1/neutral_zyx.tres" id="1_jc2hw"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(116, 75)
+sprite_frames = ExtResource("1_jc2hw")
+animation = &"attack"
+frame_progress = 0.338462
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

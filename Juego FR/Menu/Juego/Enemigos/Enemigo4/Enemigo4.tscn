@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://bgkm763c6nkvt"]
+[gd_scene load_steps=2 format=3 uid="uid://bgkm763c6nkvt"]
 
-[node name="Enemigo4" type="Node2D"]
+[ext_resource type="SpriteFrames" uid="uid://x65krgk4t4te" path="res://Menu/Juego/Enemigos/Enemigo4/f6_frostdrake.tres" id="1_rqfgx"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(187, 117)
+sprite_frames = ExtResource("1_rqfgx")
+animation = &"run"
+frame_progress = 0.502742
+flip_h = true

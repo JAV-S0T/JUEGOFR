@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://bqwxsmt4vnrve"]
+[gd_scene load_steps=2 format=3 uid="uid://bqwxsmt4vnrve"]
 
-[node name="Enemigo2" type="Node2D"]
+[ext_resource type="SpriteFrames" uid="uid://dgtdr1wbm5f7p" path="res://Menu/Juego/Enemigos/Enemigo2/neutral_whitewidow.tres" id="1_m622w"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(152, 83)
+sprite_frames = ExtResource("1_m622w")
+animation = &"attack"
+frame_progress = 0.372223
+flip_h = true

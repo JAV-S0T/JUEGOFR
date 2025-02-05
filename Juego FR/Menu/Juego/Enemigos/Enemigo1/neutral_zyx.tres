@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=99 format=3 uid="uid://bmrsx2cn1iw2o"]
 
-[ext_resource type="Texture2D" uid="uid://dnfcno022bc16" path="res://addons/duelyst_animated_sprites/assets/spritesheets/units/neutral_zyx.png" id="1_7rv0t"]
+[ext_resource type="Texture2D" uid="uid://dthnpe6jpu7j3" path="res://addons/duelyst_animated_sprites/assets/spritesheets/units/neutral_zyx.png" id="1_7rv0t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_btfls"]
 atlas = ExtResource("1_7rv0t")
@@ -512,7 +512,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack",
-"speed": 9.0
+"speed": 11.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -618,7 +618,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"death",
-"speed": 9.0
+"speed": 11.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -682,7 +682,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 9.0
+"speed": 11.0
 }, {
 "frames": [{
 "duration": 1.0,

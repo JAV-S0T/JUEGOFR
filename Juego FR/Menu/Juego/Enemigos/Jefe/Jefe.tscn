@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://puqycrt8dq40"]
+[gd_scene load_steps=2 format=3 uid="uid://puqycrt8dq40"]
 
-[node name="Jefe" type="Node2D"]
+[ext_resource type="SpriteFrames" uid="uid://biv41qjuurldf" path="res://Menu/Juego/Enemigos/Jefe/f6_greatwhitenorth.tres" id="1_306mh"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(143, 87)
+sprite_frames = ExtResource("1_306mh")
+animation = &"idle"
+frame_progress = 0.211423
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b8j2dvmgh44vo"]
 
-[ext_resource type="SpriteFrames" path="res://addons/duelyst_animated_sprites/assets/spriteframes/icons/generalspell_f3_hex.tres" id="1_cdnn5"]
+[ext_resource type="SpriteFrames" uid="uid://cxn6x4ksg4kit" path="res://Menu/Juego/Player/f1_radiantdragoon.tres" id="1_6u733"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 
@@ -9,8 +9,6 @@
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(717, 297)
 scale = Vector2(0.88, 1)
-sprite_frames = ExtResource("1_cdnn5")
-animation = &"active"
-frame = 5
-frame_progress = 0.942232
-flip_h = true
+sprite_frames = ExtResource("1_6u733")
+animation = &"run"
+frame_progress = 0.721737

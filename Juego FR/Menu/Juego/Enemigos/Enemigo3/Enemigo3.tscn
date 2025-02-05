@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://cey1w5u0pkbd5"]
+[gd_scene load_steps=2 format=3 uid="uid://cey1w5u0pkbd5"]
 
-[node name="Enemigo3" type="Node2D"]
+[ext_resource type="SpriteFrames" uid="uid://rxiae1k2yccg" path="res://Menu/Juego/Enemigos/Enemigo3/neutral_windstopper.tres" id="1_k4vb2"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(165, 81)
+sprite_frames = ExtResource("1_k4vb2")
+animation = &"idle"
+frame_progress = 0.922466
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

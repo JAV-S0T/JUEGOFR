@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=78 format=3 uid="uid://cxn6x4ksg4kit"]
 
-[ext_resource type="Texture2D" uid="uid://ci8v5d6tfx5of" path="res://addons/duelyst_animated_sprites/assets/spritesheets/units/f1_radiantdragoon.png" id="1_dqtrs"]
+[ext_resource type="Texture2D" uid="uid://b6ipjfcof3t2u" path="res://addons/duelyst_animated_sprites/assets/spritesheets/units/f1_radiantdragoon.png" id="1_dqtrs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d3kry"]
 atlas = ExtResource("1_dqtrs")
@@ -386,7 +386,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack",
-"speed": 9.0
+"speed": 13.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -427,7 +427,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"breathing",
-"speed": 9.0
+"speed": 13.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -535,7 +535,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 9.0
+"speed": 11.0
 }, {
 "frames": [{
 "duration": 1.0,
