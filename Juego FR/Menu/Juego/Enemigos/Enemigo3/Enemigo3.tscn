@@ -1,14 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://cey1w5u0pkbd5"]
+[gd_scene load_steps=3 format=3 uid="uid://1d5jnnfcr43l"]
 
-[ext_resource type="SpriteFrames" uid="uid://rxiae1k2yccg" path="res://Menu/Juego/Enemigos/Enemigo3/neutral_windstopper.tres" id="1_k4vb2"]
+[ext_resource type="SpriteFrames" uid="uid://swtjojkdvecp" path="res://addons/duelyst_animated_sprites/assets/spriteframes/units/f1_peacekeeper.tres" id="1_bfvru"]
+[ext_resource type="Script" path="res://Menu/Juego/Enemigos/Enemigo3/Enemigo3.gd" id="1_kcy74"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(165, 81)
-sprite_frames = ExtResource("1_k4vb2")
-animation = &"idle"
-frame_progress = 0.922466
-flip_h = true
+script = ExtResource("1_kcy74")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, -0.999992)
+scale = Vector2(2.77, 2.615)
+sprite_frames = ExtResource("1_bfvru")
+animation = &"attack"
+frame_progress = 0.810217
+flip_h = true

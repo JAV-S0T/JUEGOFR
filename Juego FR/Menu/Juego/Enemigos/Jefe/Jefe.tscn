@@ -1,14 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://puqycrt8dq40"]
+[gd_scene load_steps=3 format=3 uid="uid://d23lassap2keu"]
 
-[ext_resource type="SpriteFrames" uid="uid://biv41qjuurldf" path="res://Menu/Juego/Enemigos/Jefe/f6_greatwhitenorth.tres" id="1_306mh"]
+[ext_resource type="Script" path="res://Menu/Juego/Enemigos/Jefe/Jefe.gd" id="1_2c5la"]
+[ext_resource type="SpriteFrames" uid="uid://ci7qp4qp4jr81" path="res://addons/duelyst_animated_sprites/assets/spriteframes/units/boss_crystal.tres" id="1_ey51t"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(143, 87)
-sprite_frames = ExtResource("1_306mh")
-animation = &"idle"
-frame_progress = 0.211423
-flip_h = true
+script = ExtResource("1_2c5la")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(13, -5.99999)
+scale = Vector2(5.97031, 5.24375)
+sprite_frames = ExtResource("1_ey51t")
+animation = &"breathing"
+frame_progress = 0.564072
+flip_h = true

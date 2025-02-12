@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://fiyb6oqu1mj6"]
+[gd_scene load_steps=6 format=3 uid="uid://fiyb6oqu1mj6"]
 
 [ext_resource type="Script" path="res://Menu/Juego/Juego.gd" id="1_s1316"]
 [ext_resource type="Texture2D" uid="uid://cvrgjrcvecvsu" path="res://Imágenes/imagen_Juego.jpg" id="2_tct45"]
 [ext_resource type="AudioStream" uid="uid://dtvfulla4lxej" path="res://Sonidos/Sonido_Juego/Bury the Light - Vergil's battle theme from Devil May Cry 5 Special Edition.mp3" id="3_7puna"]
+[ext_resource type="PackedScene" uid="uid://cvba13suor7s8" path="res://Menu/Juego/Player/Player.tscn" id="4_4wvoa"]
+[ext_resource type="PackedScene" uid="uid://x1brm6xbyash" path="res://Menu/Juego/Enemigos/Enemigo1/Enemigo1.tscn" id="5_jb78u"]
 
 [node name="Juego" type="Node2D"]
+visible = false
 script = ExtResource("1_s1316")
 
 [node name="ImagenJuego" type="Sprite2D" parent="."]
@@ -40,6 +43,12 @@ text = "Atacar"
 [node name="SonidoJuego" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_7puna")
 autoplay = true
+
+[node name="Player" parent="." instance=ExtResource("4_4wvoa")]
+position = Vector2(342, 370)
+
+[node name="Enemigo1" parent="." instance=ExtResource("5_jb78u")]
+position = Vector2(785, 413)
 
 [connection signal="mouse_entered" from="ImagenJuego/Volver3" to="." method="_on_volver_3_mouse_entered"]
 [connection signal="pressed" from="ImagenJuego/Volver3" to="." method="_on_volver_3_pressed"]
