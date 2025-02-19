@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://1d5jnnfcr43l"]
 
-[ext_resource type="SpriteFrames" uid="uid://swtjojkdvecp" path="res://addons/duelyst_animated_sprites/assets/spriteframes/units/f1_peacekeeper.tres" id="1_bfvru"]
 [ext_resource type="Script" path="res://Menu/Juego/Enemigos/Enemigo3/Enemigo3.gd" id="1_kcy74"]
+[ext_resource type="SpriteFrames" uid="uid://swtjojkdvecp" path="res://addons/duelyst_animated_sprites/assets/spriteframes/units/Enemigo3.tres" id="2_ck506"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_kcy74")
@@ -11,7 +11,7 @@ script = ExtResource("1_kcy74")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2, -0.999992)
 scale = Vector2(2.77, 2.615)
-sprite_frames = ExtResource("1_bfvru")
+sprite_frames = ExtResource("2_ck506")
 animation = &"attack"
 frame_progress = 0.810217
 flip_h = true

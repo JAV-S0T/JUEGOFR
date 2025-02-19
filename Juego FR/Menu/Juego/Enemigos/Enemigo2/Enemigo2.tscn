@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dk7divrbo0vpt"]
 
-[ext_resource type="SpriteFrames" uid="uid://kjg8vew3cnis" path="res://addons/duelyst_animated_sprites/assets/spriteframes/units/f2_deathphantom.tres" id="1_3rx6e"]
 [ext_resource type="Script" path="res://Menu/Juego/Enemigos/Enemigo2/Enemigo2.gd" id="1_ia716"]
+[ext_resource type="SpriteFrames" uid="uid://kjg8vew3cnis" path="res://addons/duelyst_animated_sprites/assets/spriteframes/units/Enemigo2.tres" id="2_uygpm"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_ia716")
@@ -11,7 +11,7 @@ script = ExtResource("1_ia716")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-4.96874, 0.999973)
 scale = Vector2(4.37422, 3.975)
-sprite_frames = ExtResource("1_3rx6e")
+sprite_frames = ExtResource("2_uygpm")
 animation = &"attack"
 frame_progress = 0.768149
 flip_h = true

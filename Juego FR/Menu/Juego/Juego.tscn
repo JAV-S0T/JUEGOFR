@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://x1brm6xbyash" path="res://Menu/Juego/Enemigos/Enemigo1/Enemigo1.tscn" id="5_jb78u"]
 
 [node name="Juego" type="Node2D"]
-visible = false
 script = ExtResource("1_s1316")
 
 [node name="ImagenJuego" type="Sprite2D" parent="."]
@@ -26,20 +25,6 @@ offset_bottom = -257.5
 grow_vertical = 0
 text = "Volver"
 
-[node name="Atacar" type="Button" parent="ImagenJuego"]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -494.179
-offset_top = -305.631
-offset_right = -406.179
-offset_bottom = -254.631
-grow_horizontal = 2
-grow_vertical = 0
-text = "Atacar"
-
 [node name="SonidoJuego" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_7puna")
 autoplay = true
@@ -52,5 +37,3 @@ position = Vector2(785, 413)
 
 [connection signal="mouse_entered" from="ImagenJuego/Volver3" to="." method="_on_volver_3_mouse_entered"]
 [connection signal="pressed" from="ImagenJuego/Volver3" to="." method="_on_volver_3_pressed"]
-[connection signal="mouse_entered" from="ImagenJuego/Atacar" to="." method="_on_atacar_mouse_entered"]
-[connection signal="pressed" from="ImagenJuego/Atacar" to="." method="_on_atacar_pressed"]

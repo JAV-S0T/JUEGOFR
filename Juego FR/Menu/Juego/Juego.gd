@@ -13,9 +13,6 @@ func _on_volver_3_pressed():
 
 
 
-func _on_atacar_pressed():
-	$"/root/Global/BotonClick".play()
-	pass # Replace with function body.
 
 
 func _on_volver_3_mouse_entered():
@@ -24,6 +21,3 @@ func _on_volver_3_mouse_entered():
 
 
 
-func _on_atacar_mouse_entered():
-	$"/root/Global/BotonEncima".play()
-	pass # Replace with function body.
