@@ -1,5 +1,5 @@
 extends CharacterBody2D
-func _process(delta):
-	$AnimatedSprite2D.play("idle")
-	
+func _ready():
+	$Enemigo1.play("idle")
 	pass
+	

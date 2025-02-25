@@ -3,12 +3,12 @@
 [ext_resource type="SpriteFrames" uid="uid://fvovvklq75tl" path="res://addons/duelyst_animated_sprites/assets/spriteframes/units/Player.tres" id="1_4k1r4"]
 [ext_resource type="Script" path="res://Menu/Juego/Player/Player.gd" id="1_7lbsc"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_7lbsc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Player" type="AnimatedSprite2D" parent="."]
 position = Vector2(3.8147e-06, 5)
 scale = Vector2(2.70769, 2.64808)
 sprite_frames = ExtResource("1_4k1r4")
@@ -23,6 +23,6 @@ offset_bottom = 275.0
 text = "Atacar
 "
 
-[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="animation_looped" from="Player" to="." method="_on_player_animation_looped"]
 [connection signal="mouse_entered" from="Atacar" to="." method="_on_atacar_mouse_entered"]
 [connection signal="pressed" from="Atacar" to="." method="_on_atacar_pressed"]
