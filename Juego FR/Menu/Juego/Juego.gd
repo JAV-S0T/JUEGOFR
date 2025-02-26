@@ -11,13 +11,7 @@ func _on_volver_3_pressed():
 	pass # Replace with function body.
 
 
-
-
-
-
 func _on_volver_3_mouse_entered():
 	$"/root/Global/BotonEncima".play()
 	pass # Replace with function body.
-
-
 

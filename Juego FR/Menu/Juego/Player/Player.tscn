@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cvba13suor7s8"]
+[gd_scene load_steps=4 format=3 uid="uid://cvba13suor7s8"]
 
 [ext_resource type="SpriteFrames" uid="uid://fvovvklq75tl" path="res://addons/duelyst_animated_sprites/assets/spriteframes/units/Player.tres" id="1_4k1r4"]
 [ext_resource type="Script" path="res://Menu/Juego/Player/Player.gd" id="1_7lbsc"]
+[ext_resource type="AudioStream" uid="uid://dmn1mmno4d02g" path="res://Sonidos/Sonido_Juego/medium-explosion-40472.mp3" id="3_48qn5"]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_7lbsc")
@@ -13,7 +14,8 @@ position = Vector2(3.8147e-06, 5)
 scale = Vector2(2.70769, 2.64808)
 sprite_frames = ExtResource("1_4k1r4")
 animation = &"attack"
-frame_progress = 0.906195
+frame = 24
+frame_progress = 0.460599
 
 [node name="Atacar" type="Button" parent="."]
 offset_left = -68.0
@@ -22,6 +24,9 @@ offset_right = 68.0
 offset_bottom = 275.0
 text = "Atacar
 "
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_48qn5")
 
 [connection signal="animation_looped" from="Player" to="." method="_on_player_animation_looped"]
 [connection signal="mouse_entered" from="Atacar" to="." method="_on_atacar_mouse_entered"]

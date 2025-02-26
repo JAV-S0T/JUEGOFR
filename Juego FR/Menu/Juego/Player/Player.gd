@@ -16,6 +16,7 @@ func _on_atacar_mouse_entered():
 
 func _on_atacar_pressed():
 	$"/root/Global/BotonClick".play()
+	$AudioStreamPlayer2D.play()
 	$Player.play("attack")
 	
 	pass # Replace with function body.
@@ -24,3 +25,4 @@ func _on_atacar_pressed():
 func _on_player_animation_looped():
 	$Player.play("idle")
 	pass # Replace with function body.
+
