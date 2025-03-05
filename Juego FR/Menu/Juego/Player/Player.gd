@@ -16,7 +16,6 @@ func _on_atacar_mouse_entered():
 
 func _on_atacar_pressed():
 	$"/root/Global/BotonClick".play()
-	$AudioStreamPlayer2D.play()
 	$Player.play("attack")
 	$Timer.start()
 	
@@ -31,4 +30,5 @@ func _on_player_animation_looped():
 
 func _on_timer_timeout():
 	$AudioStreamPlayer2D.play()
+	get_parent().get_node("Enemigo1/Enemigo1").play("hit")
 	pass # Replace with function body.

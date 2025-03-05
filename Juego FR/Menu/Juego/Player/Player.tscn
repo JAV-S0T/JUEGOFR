@@ -35,6 +35,10 @@ offset_right = 56.0
 offset_bottom = -92.0
 text = "20 / 20"
 
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
 [connection signal="animation_looped" from="Player" to="." method="_on_player_animation_looped"]
 [connection signal="mouse_entered" from="Atacar" to="." method="_on_atacar_mouse_entered"]
 [connection signal="pressed" from="Atacar" to="." method="_on_atacar_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
