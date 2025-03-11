@@ -26,6 +26,8 @@ text = "15 / 15"
 one_shot = true
 
 [node name="Timer2" type="Timer" parent="."]
+wait_time = 1.45
+one_shot = true
 
 [connection signal="animation_looped" from="Enemigo1" to="." method="_on_enemigo_1_animation_looped"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

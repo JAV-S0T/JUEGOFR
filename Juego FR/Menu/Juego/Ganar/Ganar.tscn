@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cutsaa38vd3aa"]
+
+[ext_resource type="Texture2D" uid="uid://7c6d2e7gj0n4" path="res://Imágenes/Imagenes_Juego/Imagen_ganar.jpg" id="1_belba"]
+
+[node name="Ganar" type="Node2D"]
+
+[node name="ImagenGanar" type="Sprite2D" parent="."]
+position = Vector2(578.5, 324)
+scale = Vector2(2.24414, 1.24609)
+texture = ExtResource("1_belba")

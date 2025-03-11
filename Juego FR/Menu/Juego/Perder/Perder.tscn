@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://clnpy0b8hjwqs"]
+
+[ext_resource type="Texture2D" uid="uid://bhw57qfwy7q6e" path="res://Imágenes/Imagenes_Juego/Imagen_Perder.png" id="1_u5xhe"]
+
+[node name="Perder" type="Node2D"]
+
+[node name="ImagenPerder" type="Sprite2D" parent="."]
+position = Vector2(531, 322)
+scale = Vector2(1.56429, 1.34286)
+texture = ExtResource("1_u5xhe")
